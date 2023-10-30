@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! PP Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="coverImageCrop">
+
+        <img id="coverImage" src="" alt=" ">
+
+        <div id="starStatusContainer">
+            <div id="starRatingDiv">
+                <h1 id="stars"></h1>
+            </div>
+            <div id="statusDiv">
+                <img src="" id="rankedStatus">
+            </div>
+        </div>
+
+        <div id="beatmapDetails">
+            <h3 id="beatmapDifficultyName"></h3>
+            <h1 id="beatmapName"></h1>
+            <h3 id="artistName"></h3>
+        </div>
+        
+    </div>
+        
+    <div id="navigationError">
+        <h3 id="navigateMessage">Please navigate to an official <span id="highlight"><a href="https://osu.ppy.sh/beatmapsets" target="_blank">osu!</a></span> Beatmap page!</h3>
+        <p>Developed by <a href="https://osu.ppy.sh/users/17702714" target="_blank">Glean</a></p>
+    </div>
+
+    <div id="extensionDetails">
+        <div id="mods">
+            <input hidden type="checkbox" id="DT"/>
+            <label for="DT">
+                <img src="images/assets/modDoubletime.png" alt="DT" draggable="false">
+            </label>
+    
+            <input hidden type="checkbox" id="HD"/>
+            <label for="HD">
+                <img src="images/assets/modHidden.png" alt="HD" draggable="false">
+            </label>
+    
+            <input hidden type="checkbox" id="HR"/>
+            <label for="HR">
+                <img src="images/assets/modHardrock.png" alt="HR" draggable="false">
+            </label>
+    
+            <input hidden type="checkbox" id="FL"/>
+            <label for="FL">
+                <img src="images/assets/modFlashlight.png" alt="FL" draggable="false">
+            </label>
+            
+            <p hidden id="modID"></p>
+        </div>
+        
+        <div>
+            <h3 id="mapStats"></h3>
+        </div>
+    
+        <div id="resultContainer">
+            <img id="rankAchieved" src=""/>
+            <h1 id="performancePoints"></h1>
+        </div>
+    
+        <div>
+            <label for="accSlider" id="accSliderLabel">Accuracy: 100%</label>
+            <input type="range" id="accSlider" min="80" max="100" value="100" step="0.5"/>
+        </div>
+    
+        <p>Developed by <a href="https://osu.ppy.sh/users/17702714" target="_blank">Glean</a></p>
+    </div>
+
+    <script src="js/popup.js"></script>
+</body>
+</html>
