@@ -1,0 +1,249 @@
+/* Torus Regular */
+@font-face {
+    font-family: "Torus"; 
+    src: url('../fonts/TorusPro-Regular.ttf');
+    font-weight: 400;
+} 
+
+/* Torus Bold */
+@font-face {
+    font-family: "Torus"; 
+    src: url('../fonts/TorusPro-Bold.ttf');
+    font-weight: 900;
+}
+
+/* Torus SemiBold */
+@font-face {
+    font-family: "Torus"; 
+    src: url('../fonts/TorusPro-SemiBold.ttf');
+    font-weight: 700;
+}
+
+/* Torus Thin */
+@font-face {
+    font-family: "Torus"; 
+    src: url('../fonts/TorusPro-Thin.ttf');
+    font-weight: 200;
+}
+
+body {
+    background-color: rgb(31, 41, 46);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+}
+
+h1 {
+    font-family: Torus; font-weight: 700;
+}
+
+h3 {
+    font-family: Torus; font-weight: 400;
+}
+
+p {
+    font-family: Torus; font-weight: 200;
+}
+
+label {
+    font-family: Torus; font-weight: 200;
+}
+
+#rankedStatus {
+    height: 28px;
+}
+
+#coverImage {
+    opacity: 0.7;
+    width: 450px;
+    height: 125px;
+    margin-left: -70px;
+    pointer-events: none;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+}
+
+#coverImageCrop {
+    width: 315px;
+    height: 125px;
+    padding-bottom: 15px;
+}
+
+#starStatusContainer {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#starRatingDiv {
+    float: left;
+}
+  
+#statusDiv {
+    float: left;
+    margin-left: 3.5px;
+}
+
+#stars {
+    font-size: 20px;
+}
+
+#beatmapDetails {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+
+#beatmapName {
+    font-size: 23px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+
+#beatmapDifficultyName {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+#artistName {
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+#extensionDetails {
+    margin: 20px;
+}
+
+#mapStats {
+    padding-top: 2px;
+    font-size: 12px;
+}
+
+#accuracyHeader {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+#offWhite {
+    color: rgb(222,222,222)
+}
+
+#resultContainer {
+    display: flex;
+    margin-bottom: 23px;
+}
+
+#rankAchieved {
+    height: 28px;
+}
+
+#performancePoints {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 13px;
+}
+
+#accSliderLabel {
+    font-size: 14px; 
+}
+
+#highlight {
+    color: #ffcc21;
+    font-family: Torus; font-weight: 700;
+}
+
+#navigationError {
+    margin: 20px;
+    margin-bottom: 25px;
+}
+
+#navigateMessage {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+label img {
+    opacity: 0.25;
+    height: 38px;
+    padding-right: 6px;
+    cursor: pointer;
+}
+
+label img:hover {
+    opacity: 0.5;
+}
+
+input[type=checkbox]:checked + label img {
+    opacity : 1;
+}
+
+input[type="range"] {
+    width: 260px;
+    display: block;
+    -webkit-appearance: none;
+    background-color: #ffcc21;
+    height: 9px;
+    border-radius: 5px;
+    margin-left: -1px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #1f292e;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}​
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: white;
+    border: 2px solid white;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.2);
+}
+
+a:link {
+    color: rgb(192, 250, 255);
+    text-decoration: none;
+}
+  
+a:visited {
+    color: rgb(192, 250, 255);
+    text-decoration: none;
+}
+  
+a:hover {
+    color: rgb(192, 250, 255);
+}
+
+a:active {
+    color: rgb(192, 250, 255);
+    text-decoration: none;
+}
+
+#highlight a:link {
+    color: #ffcc21;
+}
+  
+#highlight a:visited {
+    color: #ffcc21;
+}
+  
+#highlight a:hover {
+    color: #ffcc21;
+}
+
+#highlight a:active {
+    color: #ffcc21;
+}
+
