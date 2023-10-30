@@ -4,4 +4,5 @@ Chromium-based extension that calculates pp values for various maps.
 Extension Preview:
 ![Extension Preview](https://github.com/ImGlean/osu-PP-Calculator/blob/main/images/assets/extensionPreview.png?raw=true)
 
-# How To Use
+# What browsers does this work on
+Extension has been tested to work on Chrome and Edge
