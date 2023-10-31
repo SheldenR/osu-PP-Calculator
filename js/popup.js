@@ -11,7 +11,6 @@ chrome.tabs.query({
     const difficultyID = beatmapStringArray[1].split("/")[1];
     const apiURLAdditions = "&s=" + beatmapSetID + "&b=" + difficultyID + "&m=" + osuMode; 
     const beatmapCoverImg = "https://assets.ppy.sh/beatmaps/" + beatmapSetID + "/covers/cover.jpg";
-    const beatmapAPIUrl = "https://osu.ppy.sh/api/get_beatmaps?k=0b22c80610f2e8dd1ca95a0d6b3103faa3cd2d32" + apiURLAdditions;
     const ppcalcAPIURL = "https://pp.osuck.net/pp?id=" + difficultyID;
 
     document.getElementById("navigationError").hidden = true;
