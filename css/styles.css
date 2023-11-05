@@ -26,6 +26,11 @@
     font-weight: 200;
 }
 
+@keyframes skeleton-loading {
+    0% { background-color: #384951; }
+    100% { background-color: #384951; }
+}
+
 body {
     background-color: rgb(31, 41, 46);
     color: rgb(255, 255, 255);
@@ -49,8 +54,17 @@ label {
     font-family: Torus; font-weight: 200;
 }
 
+#skeletonText {
+    animation: skeleton-loading 1s linear infinite alternate;
+    opacity: 70%;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    box-shadow: 0px 4px 0px rgba(17,24,28,0.4);
+}
+
 #rankedStatus {
     height: 28px;
+    user-select: none;
 }
 
 #coverImage {
@@ -59,7 +73,9 @@ label {
     height: 125px;
     margin-left: -70px;
     pointer-events: none;
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    user-select: none;
 }
 
 #coverImageCrop {
@@ -115,6 +131,10 @@ label {
 
 #extensionDetails {
     margin: 20px;
+}
+
+#mods {
+    user-select: none;
 }
 
 #mapStats {
@@ -184,7 +204,7 @@ input[type="range"] {
     width: 260px;
     display: block;
     -webkit-appearance: none;
-    background-color: #ffcc21;
+    appearance: none;
     height: 9px;
     border-radius: 5px;
     margin-left: -1px;
@@ -201,11 +221,6 @@ input[type="range"]::-webkit-slider-thumb {
     border: 2px solid #1f292e;
     cursor: pointer;
     transition: .15s ease-in-out;
-}​
-
-input[type="range"]::-webkit-slider-thumb:hover {
-    background-color: white;
-    border: 2px solid white;
 }
 
 input[type="range"]::-webkit-slider-thumb:active {
@@ -246,4 +261,3 @@ a:active {
 #highlight a:active {
     color: #ffcc21;
 }
-
