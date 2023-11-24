@@ -8,4 +8,4 @@ Simple extension that can quickly calculate PP values for osu! Beatmaps in your 
 * Includes Hidden, Hardrock, DoubleTime and Flashlight modifications
 * Works on all chromium-based browsers
 
-![Extension Preview](https://github.com/ImGlean/osu-PP-Calculator/blob/main/images/assets/extensionPreview.png?raw=true)
+![Extension Preview](https://github.com/SheldenR/osu-PP-Calculator/blob/main/images/assets/extensionPreview.png?raw=true)
