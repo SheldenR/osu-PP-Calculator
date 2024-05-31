@@ -1,6 +1,6 @@
 {
-    "name": "osu! pp calculator",
-    "version": "1.0.0",
+    "name": "osu! PP calculator",
+    "version": "1.0.2",
     "description": "Calculates pp values for osu! beatmaps page.",
     "manifest_version": 3,
     "author": "Glean",
@@ -19,7 +19,7 @@
         "128": "images/icon-128.png"
     },
     "permissions": [
-        "activeTab",
-        "storage"
+        "storage",
+        "activeTab"
     ]
 }
