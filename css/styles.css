@@ -79,7 +79,7 @@ label {
 }
 
 #coverImageCrop {
-    width: 315px;
+    width: 300px;
     height: 125px;
     padding-bottom: 15px;
 }
@@ -133,7 +133,20 @@ label {
     margin: 20px;
 }
 
+#modsContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 #mods {
+    width: 261px;
+    margin-top: 10px;
+    user-select: none;
+}
+
+#extraMods {
+    width: 261px;
+    margin-top: 10px;
     user-select: none;
 }
 
@@ -185,9 +198,50 @@ label {
     margin-bottom: 30px;
 }
 
+#settingsIcon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    filter: drop-shadow( 0px 4px 0px rgba(17,24,28,0.4));
+}
+
+#backIcon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    filter: drop-shadow( 0px 4px 0px rgba(17,24,28,0.4));
+}
+
+#header {
+    font-family: Torus; font-size: 24px; font-weight: 700;
+    width: 261px;
+    margin-top: 40px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+#options {
+    padding-top: 2.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+#developerTag {
+    margin-left: 20px;
+    padding-bottom: 7px;
+}
+
+
 label img {
     opacity: 0.25;
-    height: 38px;
+    height: 40px;
     padding-right: 6px;
     cursor: pointer;
 }
