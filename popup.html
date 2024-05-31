@@ -9,9 +9,18 @@
 </head>
 
 <body>
+    <div id="navigationDiv">
+        <div id="settingsIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,256,256"><g fill="#f5f5f5" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M9.66797,2l-0.49219,2.52344c-0.82076,0.31036 -1.57968,0.74397 -2.24609,1.29102l-2.42383,-0.83594l-2.33203,4.04297l1.93945,1.68555c-0.06877,0.42195 -0.11328,0.85159 -0.11328,1.29297c0,0.44138 0.04452,0.87101 0.11328,1.29297l-1.93945,1.68555l2.33203,4.04297l2.42383,-0.83594c0.66642,0.54705 1.42533,0.98065 2.24609,1.29102l0.49219,2.52344h4.66406l0.49219,-2.52344c0.82076,-0.31036 1.57968,-0.74397 2.24609,-1.29102l2.42383,0.83594l2.33203,-4.04297l-1.93945,-1.68555c0.06877,-0.42195 0.11328,-0.85159 0.11328,-1.29297c0,-0.44138 -0.04452,-0.87101 -0.11328,-1.29297l1.93945,-1.68555l-2.33203,-4.04297l-2.42383,0.83594c-0.66642,-0.54705 -1.42533,-0.98065 -2.24609,-1.29102l-0.49219,-2.52344zM12,8c2.209,0 4,1.791 4,4c0,2.209 -1.791,4 -4,4c-2.209,0 -4,-1.791 -4,-4c0,-2.209 1.791,-4 4,-4z"></path></g></g></svg>
+        </div>
+        <div id="backIcon">
+            <svg version="1.1" viewBox="0 0 45 34" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon fill="#ffffff" points="19.626,31.705 7.712,20 45,20 45,15 7.712,15 19.626,3.006 16.798,0.273 -0.38,17.499   16.798,34.605 "/></svg>
+        </div>
+    </div>
+
     <div id="coverImageCrop">
 
-        <img id="coverImage" src="https://upload.wikimedia.org/wikipedia/commons/6/68/Solid_black.png?20060513000051" alt=" ">
+        <img id="coverImage" src="" alt=" ">
 
         <div id="starStatusContainer">
             <div id="starRatingDiv">
@@ -35,6 +44,16 @@
         <p>Developed by <a href="https://osu.ppy.sh/users/17702714" target="_blank">Glean</a></p>
     </div>
 
+    <div id="settingsPage">
+        <div id="header">
+            <h>Settings</h>
+        </div>
+        <div id="options">
+            <input type="checkbox" id="moreMods" name="moreMods"/>
+            <label for="moreMods">Enable extra modifications</label>
+        </div>
+    </div>
+
     <div id="extensionDetails">
         <div id="mods">
             <input hidden type="checkbox" id="DT"/>
@@ -56,10 +75,32 @@
             <label for="FL">
                 <img src="images/assets/modFlashlight.png" alt="FL" draggable="false">
             </label>
-            
-            <p hidden id="modID"></p>
+        </div>
+
+        <div id="extraMods">
+            <input hidden type="checkbox" id="EZ"/>
+            <label for="EZ">
+                <img src="images/assets/modEasy.png" alt="EZ" draggable="false">
+            </label>
+    
+            <input hidden type="checkbox" id="HT"/>
+            <label for="HT">
+                <img src="images/assets/modHalftime.png" alt="HT" draggable="false">
+            </label>
+    
+            <input hidden type="checkbox" id="SO"/>
+            <label for="SO">
+                <img src="images/assets/modSpunout.png" alt="SO" draggable="false">
+            </label>
+    
+            <input hidden type="checkbox" id="TD"/>
+            <label for="TD">
+                <img src="images/assets/modTouchdevice.png" alt="FL" draggable="false">
+            </label>
         </div>
         
+        <p hidden id="modID"></p>
+
         <div>
             <h3 id="mapStats">AR: 0.00 OD: 0.00 CS: 0.00 HP: 0.00 BPM: 0</h3>
         </div>
@@ -73,7 +114,9 @@
             <label for="accSlider" id="accSliderLabel">Accuracy: 100%</label>
             <input type="range" id="accSlider" min="80" max="100" value="100" step="0.5"/>
         </div>
-    
+    </div>
+
+    <div id="developerTag">
         <p>Developed by <a href="https://osu.ppy.sh/users/17702714" target="_blank">Glean</a></p>
     </div>
 
